@@ -73,7 +73,7 @@ public class GeoJSONReader {
             }
             return factory.createPolygon(shell, holes);
         } else {
-            return factory.createPolygon(shell);
+            return factory.createPolygon(shell, null);
         }
     }
 

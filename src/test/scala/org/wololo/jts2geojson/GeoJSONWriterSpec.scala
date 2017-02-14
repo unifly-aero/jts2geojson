@@ -20,7 +20,8 @@ class GeoJSONWriterSpec extends WordSpec {
         new Coordinate(1, 2),
         new Coordinate(2, 2),
         new Coordinate(1, 1)))
-      val polygon = factory.createPolygon(lineString.getCoordinates())
+      var shell = factory.createLinearRing(lineString.getCoordinates())
+      val polygon = factory.createPolygon(shell, null)
 
       "expected result for Point" in {
         val expected = """{"type":"Point","coordinates":[1.0,1.0]}"""

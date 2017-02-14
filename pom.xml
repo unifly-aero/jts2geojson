@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.wololo</groupId>
 	<artifactId>jts2geojson</artifactId>
-	<version>0.10.0</version>
+	<version>0.10.0-unifly</version>
 	<packaging>jar</packaging>
 	<name>jts2geojson</name>
 	<description>JTS to GeoJSON converter</description>
@@ -60,8 +60,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.vividsolutions</groupId>
-			<artifactId>jts-core</artifactId>
-			<version>1.14.0</version>
+			<artifactId>jts</artifactId>
+			<version>1.8</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
